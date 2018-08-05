@@ -7,8 +7,5 @@ try:
 
     print(a / b)
 
-except ZeroDivisionError:
-    print("Please do not input \"0\" at second input.")
-
-except ValueError:
-    print("Please input numbers.  Characters are not allowed.")
+except (ZeroDivisionError, ValueError):
+    print("Invalid Input.")
